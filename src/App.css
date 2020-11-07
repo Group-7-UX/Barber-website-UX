@@ -1,0 +1,133 @@
+
+/* Copper #C0995A */
+
+:root{
+  --copper: #C0995A
+}
+
+body{
+  /* max-width: 90%; */
+  display: block;
+  margin: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: url("./graphics/metal-gear-rex-solid-snake-duel-wallpaper.jpeg");
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.site-nav{
+  /* background: rbga(255, 0, 0, 255); */
+  /* display: none; */
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  width: 100%;
+  /* width: 100vw; */
+  display: flex;
+}
+
+.nav-links{
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+.nav-link:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .7);
+  color: var(--copper);
+}
+
+
+.about-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about{
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+  max-width: 80%;
+
+
+}
+
+.about-text{
+  background-color: red;
+}
+
+.about-img{
+  background-color: beige;
+}
+
+
+/* quotes stuff goes here */
+
+
+.prices-and-services{
+  display: flex;
+}
+
+.twenty-picture{
+  background-color: beige;
+  /* display: none; */
+  flex-grow: 1;
+}
+
+.services-wrapper{
+  flex-grow: 1;
+  background-color: #222021;
+  color: white;
+
+
+}
+
+ .services{
+  
+  display: grid;
+  grid-gap: 3em;
+  gap: 3em;
+  grid-template-columns: repeat(auto-fit,minmax(300px,.33fr));
+  
+  justify-content: center;
+  align-items: center;
+} 
+
+.service{
+
+
+  background-color: #282828;
+  color: white;
+  text-align: left;
+  padding: 1em;
+  border-radius: 3%;
+  border-color: white;
+  border-width: 1px;
+
+
+}
