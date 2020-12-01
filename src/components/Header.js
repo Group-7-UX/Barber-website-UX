@@ -1,4 +1,5 @@
 
+import logo from '../graphics/jvst_jake_logo.png';
 
 
 export default function Header(){
@@ -6,7 +7,7 @@ export default function Header(){
         <div>
             <nav className="site-nav">
                 <div className="logo">
-                    <p>logo</p>
+                    <img style={{height: '3em', width: '3em', borderRadius: '5%'}} src={logo} />
                 </div>
                 <div className="nav-links">
                 <a className="nav-link" href="#home"><p>Home</p></a>

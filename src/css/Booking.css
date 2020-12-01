@@ -1,0 +1,81 @@
+
+
+
+.booking{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* background-color: aquamarine; */
+	
+}
+
+.booking-element{
+	
+	margin: 1em;
+	padding: 1em;
+
+}
+
+.booking-text{
+	color: var(--copper);
+}
+
+.booking-button-wrapper{
+	padding: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	background-color: var(--copper);
+	color: white;
+	transition: .3s;
+}
+
+.booking-button-wrapper:hover{
+	padding-left: 4em;
+	padding-right: 4em;
+	cursor: pointer;
+}
+
+
+.booking-underline{
+	color: white;
+}
+
+
+/* modal css */
+
+
+.booking-modal{
+	/* position: absolute; */
+	/* inset: 40px; */
+	border: 3px solid var(--copper);
+	/* this will probably turn into a dark background*/
+	/* background-color: #16245f; */
+	background-color: white;
+	overflow: auto;
+	padding: 20px;
+
+	max-width: 70%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: .7s;
+	/* height: 50%; */
+	/* width: 80%; */
+
+	/* margin: auto; */
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}

@@ -1,0 +1,40 @@
+.quote-png{
+	width: 10%;	
+}
+
+.quotes-section{
+	padding: 3em;
+  }
+  
+  
+/* might need to switch from flex to grid */
+.quotes-wrapper{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+  
+.quote-element{
+	margin: 1em;
+	padding: 2em;
+	display: flex;
+	align-items: center;
+	border-radius: 3%;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.quote-element:hover{
+	background-color: #dcdcdc;
+
+}
+
+
+  
+
+.quote-image{
+	border-radius: 100%;
+	padding: 1em;
+}

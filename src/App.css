@@ -16,15 +16,21 @@ body{
 }
 
 .App-header {
-  background-image: url("./graphics/metal-gear-rex-solid-snake-duel-wallpaper.jpeg");
+  background-image: url("./graphics/header_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
   /* justify-content: center; */
   font-size: calc(3px + 2vmin);
   color: white;
+}
+
+.header-image{
+  width: 100%;
 }
 
 .site-nav{
@@ -61,6 +67,7 @@ body{
 
 
 .about-wrapper{
+  padding-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,26 +84,43 @@ body{
 
 }
 
+.about-header{
+  color: var(--copper);
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
 .about-text{
-  background-color: red;
+  /* background-color: red; */
+}
+
+.about-img-wrapper{
+  /* background-color: beige; */
 }
 
 .about-img{
-  background-color: beige;
+  /* display: none; */
+  width: 100%;
 }
-
 
 /* quotes stuff goes here */
 
 
 .prices-and-services{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .twenty-picture{
   background-color: beige;
-  /* display: none; */
-  flex-grow: 1;
+  /* overflow: hidden; */
+  /* min-width: 30%; */
+
+}
+
+.services-image{
+  width: 100%;
+  height: 100%;
 }
 
 .services-wrapper{
@@ -114,20 +138,73 @@ body{
   gap: 3em;
   grid-template-columns: repeat(auto-fit,minmax(300px,.33fr));
   
+  
   justify-content: center;
   align-items: center;
+  padding-bottom: 2em;
+  padding-top: 1em;
 } 
 
 .service{
-
-
+  
   background-color: #282828;
   color: white;
   text-align: left;
   padding: 1em;
   border-radius: 3%;
-  border-color: white;
-  border-width: 1px;
+  border: 1.25px solid var(--copper);
+
+}
 
 
+
+
+.footer{
+  background-color: #202020;
+  color: white;
+  padding-bottom: 3em;
+  overflow: hidden;
+}
+
+.footer-location-text{
+  color: var(--copper);
+  font-weight: 250;
+}
+
+.footer-jake-handle{
+  color: var(--copper);
+  font-weight: 300;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.footer-jake-handle:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-phone{
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-phone:hover{
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footer-address-text{
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-address-text:hover{
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footer-copyright{
+  font-weight: 300;
 }
