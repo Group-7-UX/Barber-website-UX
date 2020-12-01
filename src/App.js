@@ -1,6 +1,8 @@
 
 import Iframe from 'react-iframe';
 
+import * as Scroll from 'react-scroll';
+
 import Header from './components/Header';
 import Quotes from './components/Quotes';
 import Booking from './components/Booking';
